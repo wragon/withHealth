@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TipActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/running"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/running"
+            android:padding="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Running"
+            android:textSize="25dp"
+            android:textColor="#4D61CF"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="65dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/bike"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="195dp"
+            android:padding="20dp"
+            android:id="@+id/bike"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bike"
+            android:textSize="25dp"
+            android:textColor="#4D61CF"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="273dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/gym"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="10dp"
+            android:padding="20dp"
+            android:gravity="bottom|center"
+            android:id="@+id/gym"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gym"
+            android:textSize="25dp"
+            android:textColor="#4D61CF"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="87dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/tipButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="17dp"
+                android:background="@color/colorClear"
+                app:srcCompat="@drawable/tip_icon" />
+
+            <ImageButton
+                android:id="@+id/staticButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="92dp"
+                android:background="@color/colorClear"
+                app:srcCompat="@drawable/statistics_icon" />
+
+            <ImageButton
+                android:id="@+id/homeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorClear"
+                app:srcCompat="@drawable/home_icon" />
+
+            <ImageButton
+                android:id="@+id/groupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="255dp"
+                android:background="@color/colorClear"
+                app:srcCompat="@drawable/group_icon" />
+
+            <ImageButton
+                android:id="@+id/profileButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="327dp"
+                android:background="@color/colorClear"
+                app:srcCompat="@drawable/profile_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/yoga"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="195dp"
+            android:padding="20dp"
+            android:id="@+id/yoga"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yoga"
+            android:textSize="25dp"
+            android:textColor="#4D61CF"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="268dp"/>
+    </RelativeLayout>
+    //홈버튼
+
+</RelativeLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTest2"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/good_routine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/colorClear"
+            android:onClick="mOnClick"
+            app:srcCompat="@android:drawable/btn_star" />
+
+        <Button
+            android:id="@+id/buttonstart"
+            android:layout_width="80dp"
+            android:layout_height="43dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="171dp"
+            android:background="@drawable/buttonshape_sec"
+            android:text="START"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dateNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="94dp"
+            android:layout_marginEnd="151dp"
+            android:text="00:00:00:00"
+            android:textColor="@color/colorTest1"
+            android:textSize="34dp" />
+
+        <EditText
+            android:id="@+id/newitem"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="87dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="230dp"
+            android:layout_toRightOf="@+id/newitem"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/buttonshape_sec"
+            android:onClick="mOnClick"
+            android:text="add"
+            />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="87dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="230dp"
+            android:layout_toRightOf="@+id/btnAdd"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/buttonshape_sec"
+            android:onClick="mOnClick"
+            android:text="delete"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="285dp"
+            android:background="@drawable/back_round">
+            //Tab
+            <TabHost
+                android:id="@+id/tabHost1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="85dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!-- TabWidget의 id값이 반드시 "tabs"로 지정되어야 함. -->
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <!-- FrameLayout의 id값이 반드시 "tabcontent"로 지정되어야 함. -->
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorTest1">
+                        <!-- 첫 번째 페이지. content1 -->
+                        <RelativeLayout
+                            android:id="@+id/content1"
+                            android:layout_width="match_parent"
+                            android:background="@color/colorTest1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            //루틴내용
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ListView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/listView1"
+                                    android:background="#fff"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <!-- 두 번째 페이지. content2 -->
+                        <RelativeLayout
+                            android:id="@+id/content2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            //루틴내용
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ListView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/listView2"
+                                    android:background="#fff"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <!-- 세 번째 페이지. content3 -->
+                        <RelativeLayout
+                            android:id="@+id/content3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            //루틴내용
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ListView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/listView3"
+                                    android:background="#fff"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </TabHost>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:background="@color/colorTest2"
+            android:layout_alignParentBottom="true">
+            <ImageButton
+                android:id="@+id/tipButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/homeButton"
+                android:layout_marginRight ="90dp"
+                android:background="@color/colorClear"
+                app:srcCompat="@drawable/tip_icon"/>
+            <ImageButton
+                android:id="@+id/staticButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/homeButton"
+                android:layout_marginRight ="15dp"
+                android:background="@color/colorClear"
+                app:srcCompat="@drawable/statistics_icon"/>
+            <ImageButton
+                android:id="@+id/homeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorClear"
+                app:srcCompat="@drawable/home_icon"/>
+            <ImageButton
+                android:id="@+id/groupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/homeButton"
+                android:layout_marginLeft ="15dp"
+                android:background="@color/colorClear"
+                app:srcCompat="@drawable/group_icon"/>
+            <ImageButton
+                android:id="@+id/profileButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/homeButton"
+                android:layout_marginLeft ="90dp"
+                android:background="@color/colorClear"
+                app:srcCompat="@drawable/profile_icon"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

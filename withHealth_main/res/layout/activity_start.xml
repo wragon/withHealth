@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTest2"
+    tools:context=".StartActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+
+        android:fontFamily="@font/sstb"
+        android:gravity="center_horizontal"
+        android:text="총 운동시간"
+        android:textColor="@color/colorTest1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="226dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sstb"
+        android:textColor="@color/colorTest1"
+        android:gravity="center_horizontal"
+        android:text="00:00:00:00"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/sound_off"
+        android:layout_width="53dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="84dp"
+        android:background="#00FFFFFF"
+        android:tint="#00F10069"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode" />
+
+    <ImageButton
+        android:id="@+id/sound_on"
+        android:layout_width="51dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="84dp"
+        android:background="#00FFFFFF"
+        android:tint="@color/colorTest1"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/b_play"
+        android:layout_width="74dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="68dp"
+        android:background="#00FFFFFF"
+        android:text="시작"
+        android:textSize="14dp"
+        android:textColor="@color/colorTest1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/b_pause"
+        android:layout_width="74dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="68dp"
+        android:background="@color/colorClear"
+        android:text="일시정지"
+        android:textSize="14dp"
+        android:textColor="@color/colorTest1"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/b_reset"
+        android:layout_width="74dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="100dp"
+        android:background="#00FFFFFF"
+        android:text="리셋"
+        android:textSize="14dp"
+        android:textColor="@color/colorTest1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TabHost
+        android:id="@+id/tabHost2"
+        android:layout_width="369dp"
+        android:layout_height="477dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/time_snd"
+                        android:layout_width="140dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/name_snd"
+                        android:fontFamily="@font/ssbl"
+                        android:gravity="center_horizontal"
+                        android:text="2등 시간"
+                        android:textColor="@color/colorTest1"
+                        app:layout_constraintBottom_toTopOf="@+id/dansang"
+                        app:layout_constraintEnd_toStartOf="@+id/name_trd"
+                        app:layout_constraintHorizontal_bias="0.47"
+                        app:layout_constraintStart_toEndOf="@+id/name_fst" />
+
+                    <TextView
+                        android:id="@+id/time_fst"
+                        android:layout_width="140dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/name_fst"
+                        android:layout_alignTop="@id/time_snd"
+                        android:layout_toRightOf="@+id/time_snd"
+                        android:fontFamily="@font/ssbl"
+                        android:gravity="center_horizontal"
+                        android:text="1등 시간"
+                        android:textColor="@color/colorTest1"
+                        app:layout_constraintBottom_toTopOf="@+id/dansang"
+                        app:layout_constraintEnd_toStartOf="@+id/name_snd"
+                        app:layout_constraintHorizontal_bias="0.485"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/time_trd"
+                        android:layout_width="140dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/name_fst"
+                        android:layout_alignTop="@+id/time_fst"
+                        android:layout_toRightOf="@+id/time_fst"
+                        android:fontFamily="@font/ssbl"
+                        android:gravity="center_horizontal"
+                        android:text="3등 시간"
+                        android:textColor="@color/colorTest1"
+                        app:layout_constraintBottom_toTopOf="@+id/dansang"
+                        app:layout_constraintStart_toEndOf="@+id/name_snd" />
+
+                    <ImageView
+                        android:id="@+id/dansang"
+                        android:layout_width="800dp"
+                        android:layout_height="275dp"
+                        android:layout_below="@+id/time_fst"
+                        android:layout_marginBottom="24dp"
+                        android:background="#00FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/dansang" />
+
+                    <TextView
+                        android:id="@+id/name_snd"
+                        android:layout_width="140dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/ssbl"
+                        android:gravity="center_horizontal"
+                        android:text="2등 이름"
+
+                        android:textColor="@color/colorTest1"                        app:layout_constraintBottom_toTopOf="@+id/time_snd"
+                        app:layout_constraintEnd_toStartOf="@+id/name_trd"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/name_fst" />
+
+                    <TextView
+                        android:textColor="@color/colorTest1"
+                        android:id="@+id/name_fst"
+                        android:layout_width="140dp"
+                        android:layout_height="60dp"
+                        android:layout_alignTop="@id/name_snd"
+                        android:layout_toRightOf="@+id/name_snd"
+                        android:fontFamily="@font/ssbl"
+                        android:gravity="center_horizontal"
+                        android:text="1등 이름"
+                        app:layout_constraintBottom_toTopOf="@+id/time_fst"
+                        app:layout_constraintEnd_toStartOf="@+id/name_snd"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/name_trd"
+                        android:layout_width="140dp"
+                        android:layout_height="60dp"
+                        android:layout_alignTop="@id/name_fst"
+                        android:layout_toRightOf="@+id/name_fst"
+                        android:fontFamily="@font/ssbl"
+                        android:gravity="center_horizontal"
+                        android:text="3등 이름"
+                        android:textColor="@color/colorTest1"
+                        app:layout_constraintBottom_toTopOf="@+id/time_trd"
+                        app:layout_constraintStart_toEndOf="@+id/name_snd" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/BMI_Chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_below="@+id/BMI_text"
+                        android:adjustViewBounds="false"
+                        android:background="#00FFFFFF"
+                        app:layout_constraintBottom_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/bmi" />
+
+                    <TextView
+                        android:id="@+id/BMI_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="32dp"
+                        android:fontFamily="@font/ssbl"
+                        android:gravity="center_horizontal"
+                        android:text="BMI와 비만율의 상관관계"
+                        android:textColor="#DDc23cd4"
+                        android:textSize="30sp" />
+                    />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+    <Button
+        android:id="@+id/b_rest"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="152dp"
+        android:background="#00FFFFFF"
+        android:text="휴식"
+        android:textSize="14dp"
+        android:textColor="@color/colorTest1"
+        style="?android:attr/borderlessButtonStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rest_timer"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="152dp"
+        android:fontFamily="@font/sstb"
+        android:gravity="center_horizontal"
+        android:text="30"
+        android:textColor="#FF6495ED"
+        android:textSize="30dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".BikeActivity">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="102dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/sstb"
+        android:text="Bike"
+        android:textColor="@color/colorTest1"
+        android:textSize="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="151dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="308dp"
+        android:fontFamily="@font/sstb"
+        android:text="Bicycle Type"
+        android:textColor="@color/colorTest1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.156" />
+
+    <Button
+        android:id="@+id/buttonmountain"
+        android:layout_width="102dp"
+        android:layout_height="35dp"
+        android:background="@drawable/buttonshape_sec"
+        android:text="mountain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.764" />
+
+    <Button
+        android:id="@+id/buttonroad"
+        android:layout_width="102dp"
+        android:layout_height="35dp"
+        android:background="@drawable/buttonshape_sec"
+        android:text="Road"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.525" />
+
+    <Button
+        android:id="@+id/buttoncross"
+        android:layout_width="102dp"
+        android:layout_height="35dp"
+        android:background="@drawable/buttonshape_sec"
+        android:text="cross"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="373dp"
+        android:layout_height="110dp"
+        android:text="로드 바이크와 마운틴 바이크 양쪽의 특징을 갖춘 만능 바이크. 상쾌한 승차함과 안정감이 있어, 약간 험한 길에서도 주행 가능. 캐주얼하게 동내에서 사용할 수도 있어서, 초심자가 가장 쓰기 쉬운 타입. 커스터마이즈의 방법에 따라서 많은 성능을 발휘시킬 수 있다."
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="378dp"
+        android:layout_height="82dp"
+        android:text="얇은 타이어와 밑쪽으로 구부러진 핸들이 특징인 로드 바이크. 스포츠 바이크 중에서도 특히 고속 주행 성능을 추구하여 설계. 자전거 레이스는 물론 출퇴근에 사용하는 분들도 많다. 바람과 일체가 되서 주행하는 질주감은 로드 바이크 최대의 매력이고 특징이다"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.644" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="372dp"
+        android:layout_height="84dp"
+        android:text="그 이름과 같이 산악 지대 등 노면 상태가 나쁜 길에서 탈 수 있도록 설계된 자전거이며, 압도적인 주파성을 발휘한다. 타이어가 굵어서 노면 저항이 크고, 포장 도로에서는 속도가 그다지 나지 않지만, 턱 등을 신경 쓰지 않고 탈 수 있어서, 도시 길거리에서도 믿음직한 자전거다."
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.908" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

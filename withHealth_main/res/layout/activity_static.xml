@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StaticActivity"
+    android:background="@color/colorTest2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            //걸음 수
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/back_round"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/circle"
+                android:text="1176/6000 walk"
+                android:gravity="center"/>
+            //시간기록, 시간그래프
+
+            //중량 그래프
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="220dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/back_round">
+                //오늘 운동 시간
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/map_gym" />
+
+                <TextView
+                    android:id="@+id/todayTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Today Health Time" />
+
+                <TextView
+                    android:id="@+id/time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginTop="45dp"
+                    android:text="01 : 33 : 28" />
+                //일주일 운동 시간
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/map_gym" />
+
+                <TextView
+                    android:id="@+id/totalTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Total Health Time" />
+
+                <TextView
+                    android:id="@+id/time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="45dp"
+                    android:text="05 : 17 : 09" />
+                //운동 그래프
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_toLeftOf="@+id/timegraph"
+                    android:background="@drawable/chart" />
+
+                <TextView
+                    android:id="@+id/timegraph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp"
+                    android:text="Health Time" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/timegraph"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="530dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/back_round">
+                //Tab
+                <TabHost
+                    android:id="@+id/tabHost1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <!-- TabWidget의 id값이 반드시 "tabs"로 지정되어야 함. -->
+                        <TabWidget
+                            android:id="@android:id/tabs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <!-- FrameLayout의 id값이 반드시 "tabcontent"로 지정되어야 함. -->
+                        <FrameLayout
+                            android:id="@android:id/tabcontent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorTest1">
+                            <!-- 첫 번째 페이지. content1 -->
+                            <RelativeLayout
+                                android:id="@+id/content1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="280dp"
+                                    android:layout_height="30dp"
+                                    android:text="routine"
+                                    android:textColor="#FFF"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="120dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="280dp"
+                                    android:textColor="#FFF"
+                                    android:text="check"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="270dp"
+                                    android:layout_marginTop="30dp"
+                                    android:background="#fff"/>
+                                //선
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="30dp"
+                                    android:background="#000"/>
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="280dp"
+                                    android:background="#fff"/>
+                                //루틴내용
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="250dp">
+                                    <ListView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="31dp"
+                                        android:id="@+id/my_listview"
+                                        android:background="#fff"/>
+                                </LinearLayout>
+                            </RelativeLayout>
+                            <!-- 두 번째 페이지. content2 -->
+                            <RelativeLayout
+                                android:id="@+id/content2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="280dp"
+                                    android:layout_height="30dp"
+                                    android:text="routine"
+                                    android:textColor="#FFF"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="120dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="280dp"
+                                    android:text="graph"
+                                    android:textColor="#FFF"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="270dp"
+                                    android:layout_marginTop="30dp"
+                                    android:background="#fff"/>
+                                //선
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="30dp"
+                                    android:background="#000"/>
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="280dp"
+                                    android:background="#fff"/>
+                            </RelativeLayout>
+                            <!-- 세 번째 페이지. content3 -->
+                            <RelativeLayout
+                                android:id="@+id/content3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="280dp"
+                                    android:layout_height="30dp"
+                                    android:text="routine"
+                                    android:textColor="#FFF"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="120dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="280dp"
+                                    android:text="graph"
+                                    android:textColor="#FFF"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="270dp"
+                                    android:layout_marginTop="30dp"
+                                    android:background="#fff"/>
+                                //선
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="30dp"
+                                    android:background="#000"/>
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="280dp"
+                                    android:background="#fff"/>
+                            </RelativeLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                </TabHost>
+                //중량 저장
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="280dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginRight="20dp"
+                    android:text="save"
+                    android:textSize="10dp"
+                    android:textColor="#FFFFFF"
+                    android:onClick="mOnClick"
+                    android:background="@drawable/button_round" />
+                <Button
+                    android:id="@+id/show"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="280dp"
+                    android:layout_toRightOf="@+id/save"
+                    android:text="Graph"
+                    android:textSize="10dp"
+                    android:textColor="#FFFFFF"
+                    android:onClick="mOnClick"
+                    android:background="@drawable/button_round"/>
+            </RelativeLayout>
+            //띵언
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="840dp"
+                android:gravity="center"
+                android:paddingBottom="90dp" />
+        </RelativeLayout>
+    </ScrollView>
+    //home버튼
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/colorTest2"
+        android:layout_alignParentBottom="true">
+        <ImageButton
+            android:id="@+id/tipButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/homeButton"
+            android:layout_marginRight ="90dp"
+            android:background="@color/colorClear"
+            app:srcCompat="@drawable/tip_icon"/>
+        <ImageButton
+            android:id="@+id/staticButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/homeButton"
+            android:layout_marginRight ="15dp"
+            android:background="@color/colorClear"
+            app:srcCompat="@drawable/statistics_icon"/>
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorClear"
+            app:srcCompat="@drawable/home_icon"/>
+        <ImageButton
+            android:id="@+id/groupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/homeButton"
+            android:layout_marginLeft ="15dp"
+            android:background="@color/colorClear"
+            app:srcCompat="@drawable/group_icon"/>
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/homeButton"
+            android:layout_marginLeft ="90dp"
+            android:background="@color/colorClear"
+            app:srcCompat="@drawable/profile_icon"/>
+    </RelativeLayout>
+</RelativeLayout>

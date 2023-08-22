@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTest2"
+    tools:context=".GymActivity">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="102dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/sstb"
+        android:text="Gym"
+        android:textColor="@color/colorTest1"
+        android:textSize="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageButton
+        android:id="@+id/chest"
+        android:layout_width="164dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="35dp"
+        app:srcCompat="@drawable/chest" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="164dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="210dp"
+        app:srcCompat="@drawable/back"/>
+
+    <ImageButton
+        android:id="@+id/biceps"
+        android:layout_width="164dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="35dp"
+        app:srcCompat="@drawable/biceps" />
+
+    <ImageButton
+        android:id="@+id/triceps"
+        android:layout_width="164dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="210dp"
+        app:srcCompat="@drawable/triceps" />
+
+    <ImageButton
+        android:id="@+id/shoulder"
+        android:layout_width="164dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="35dp"
+        app:srcCompat="@drawable/shoulders" />
+
+    <ImageButton
+        android:id="@+id/abs"
+        android:layout_width="164dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="210dp"
+        app:srcCompat="@drawable/abs" />
+
+    <ImageButton
+        android:id="@+id/core"
+        android:layout_width="164dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="35dp"
+        app:srcCompat="@drawable/core" />
+
+    <ImageButton
+        android:id="@+id/legs"
+        android:layout_width="164dp"
+        android:layout_height="145dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="500dp"
+        app:srcCompat="@drawable/legs" />
+
+</RelativeLayout>

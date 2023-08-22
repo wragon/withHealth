@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTest2"
+    tools:context=".Login">
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_width="109dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="52dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="SIGN UP"
+        android:textColor="@color/colorTest1"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/logintheclub"
+        android:layout_width="207dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:text="Login The Club"
+        android:textAlignment="center"
+        android:textColor="@color/colorTest1"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupbtn" />
+
+    <TextView
+        android:id="@+id/contextclub"
+        android:layout_width="259dp"
+        android:layout_height="36dp"
+        android:text="The ultimate diet and exercise app"
+        android:textAlignment="center"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/colorTest1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logintheclub" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/Google_Login"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logintheclub"></com.google.android.gms.common.SignInButton>
+
+    <TextView
+        android:id="@+id/policytext"
+        android:layout_width="293dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="By continuing, you agree to accept our \nPrivacy Policy &amp; Terms of Service."
+        android:textAlignment="center"
+        android:textColor="@color/colorTest1"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Google_Login"
+        app:layout_constraintVertical_bias="0.081" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTest2"
+    tools:context=".Login">
+
+    <Button
+        android:id="@+id/subackbtn"
+        android:layout_width="109dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="52dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="BACK"
+        android:textColor="@color/colorTest1"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/jointheclub"
+        android:layout_width="207dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:text="Join The Club"
+        android:textAlignment="center"
+        android:textColor="@color/colorTest1"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subackbtn" />
+
+    <TextView
+        android:id="@+id/contextclub"
+        android:layout_width="259dp"
+        android:layout_height="36dp"
+        android:text="The ultimate diet and exercise app"
+        android:textAlignment="center"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/colorTest1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jointheclub" />
+
+    <EditText
+        android:id="@+id/joinID"
+        android:layout_width="298dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="ID"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@color/colorTest1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contextclub" />
+
+    <EditText
+        android:id="@+id/joinEmail"
+        android:layout_width="303dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_light"
+        android:inputType="textPersonName"
+        android:text="Email"
+        android:textColor="@color/colorTest1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joinID" />
+
+    <EditText
+        android:id="@+id/JoinPW"
+        android:layout_width="303dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_light"
+        android:inputType="textPersonName"
+        android:text="Password"
+        android:textColor="@color/colorTest1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joinEmail" />
+
+    <ImageButton
+        android:id="@+id/JoinButton"
+        android:layout_width="299dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/joinus_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/JoinPW" />
+
+    <TextView
+        android:id="@+id/policytext"
+        android:layout_width="293dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="By continuing, you agree to accept our \nPrivacy Policy &amp; Terms of Service."
+        android:textAlignment="center"
+        android:textColor="@color/colorTest1"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/JoinButton"
+        app:layout_constraintVertical_bias="0.114" />
+</androidx.constraintlayout.widget.ConstraintLayout>
