@@ -1,4 +1,4 @@
-<img width="241" alt="image" src="https://github.com/wragon/withHealth/assets/62223905/4cfc79fa-c707-4fb8-990c-c014516ee650"># withHealth-App
+# withHealth-App
 Health application
 
 <br>
