@@ -13,6 +13,4 @@ Health application
 
 ## layout
 
-
-- 1번, 2번, 4-1번, 4-2번 구현.
-- 4-2번에서 hair style의 강도를 조절하기 위해 neutral, target, manipulated_strength를 text로 output.
+<img width="236" alt="main" src="https://github.com/wragon/withHealth/assets/62223905/fcd31671-9bc7-43ad-80c4-2bef13656d4f">
