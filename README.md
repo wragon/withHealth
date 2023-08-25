@@ -1,5 +1,6 @@
 # withHealth-App
-Health application
+- Health application
+- 2020 스마트 경진대회 참가 작품
 
 <br>
 
